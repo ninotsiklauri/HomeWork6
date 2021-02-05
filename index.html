@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <form>
+        <div class="input">
+            <label for="weekDay">კვირის დღე: </label>
+            <div id="weekDay"></div>
+        </div>
+        <div class="main">
+            <button onclick="monday()">1</button>
+            <button onclick="tuesday()">2</button>
+            <button onclick="wednesday()">3</button>
+            <button onclick="thursday()">4</button>
+            <button onclick="friday()">5</button>
+            <button onclick="saturday()">6</button>
+            <button onclick="sunday()">7</button>
+        </div>
+    </form>
+    <hr>
+    <div class="interestCalc">
+        <h2>მარტივი და რთული პროცენტის დარიცხვის ფორმულის კალკულატორი</h2>
+        <form>
+            <label for="principal">Principal: </label>
+            <input type="number" id="principal" placeholder="Principal"><br><br>
+
+            <label for="rate">Rate: </label>
+            <input type="number" id="rate" placeholder="Rate"><br><br>
+
+            <label for="years">Years: </label>
+            <input type="number" id="years" placeholder="Years"><br><br>
+
+            <label for="percentAmount">Amount: </label>
+            <input type="number" id="percentAmount" placeholder="Perecent per year"><br><br>
+
+            <button type="button" onclick="simpleInterest()">Simple</button>
+            <button type="button" onclick="compoundInterest()">Compound</button>
+            <div>
+                <p>Benefit: <span id="benefit"></span> </p>
+                <p>Total: <span id="total"></span> </p>
+            </div>
+        </form>
+    </div>
+    <hr>
+
+    <div>
+        <h1>შემთხვევით რიცხვ [0, 30] შუალედიდან</h1>
+        <button type="button" onclick="randomNumber()">Generate</button>
+        <div id="randomNumber"></div><br>
+    </div>
+    <hr>
+    <div>
+        <h1>30 შემთხვევით რიცხვ [a, b] შუალედიდან</h1>
+        <form>
+            <label for="a">a: </label>
+            <input type="number" id="a"><br><br>
+
+            <label for="b">b: </label>
+            <input type="number" id="b"><br><br>
+
+            <button type="button" onclick="randomNum()" id="generateP">Generate!</button>
+
+            <div id="generateNum"></div>
+        </form>
+    </div>
+    <hr>
+</body>
+
+</html>

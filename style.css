@@ -1,0 +1,60 @@
+body{
+    text-align: center;
+}
+.main > button{
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main, .input{
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+input{
+    height: 50px;
+    border: 1px solid black;
+}
+label{
+    font-size: 1.5em;
+    text-decoration: solid;
+}
+#weekDay{
+    width: 100px;
+    height: 45px;
+    background-color: white;
+    border: 1px solid black;
+}
+.calc{ 
+    margin-bottom: 10px; 
+    text-align:center; 
+    width: 210px; 
+    color:black; 
+    border: solid black 2px;
+    margin-left: 500px;
+    } 
+
+    input[type="button"] 
+    { 
+    background-color:blue; 
+    color: black; 
+    border: solid black 2px; 
+    width:100% 
+    } 
+    table{
+        border-collapse: collapse;
+    }
+    input[type="text"] 
+    { 
+    background-color:white; 
+    border: solid black 2px; 
+    width:90%;
+    margin-top: 2px;
+    height: 42px;
+    } 
